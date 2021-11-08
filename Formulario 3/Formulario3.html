@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario 3</title>
+</head>
+<body>    
+    <form id="caja-horario">
+        <h4>Cree un nuevo horario</h4>
+        <label > <p>Titulo o tema de la actividad a realizar</p></label>
+        <input class="controls" type="text" id="titulo" placeholder="Escriba un tema">
+        <span id="t-error" aria-live="assertive"></span>
+
+        <label><p>Reponsable de la actividad</p></label>
+        <input class="controls"  type="text"  id="partner" placeholder="Responsable">
+        <span id="r-error" aria-live="assertive"></span>
+
+        <label > <p>Seleccione los días de la actividad</p></label>
+        <label > <p>Fecha Inicio:</p></label>
+        <input class="controls"  type="date"  id="fecha_inicio" value="2021-11-07"min="2021-11-07">
+        
+
+        <label > <p>Fecha Fin:</p></label>
+        <input class="controls"  type="date"  id="fecha_fin" value="2021-11-07"min="2021-11-07">
+        
+
+        <label > <p>Sleccione las horas</p></label>
+        <label > <p>Hora inicio</p></label>
+        <input class="controls"  type="time" id="hora_inicio">
+
+        <label > <p>Hora fin</p></label>
+        <input class="controls" type="time" id="hora_fin">  
+
+        <input type="submit" class="send-button" value="Crear Horario">
+        
+    </form>
+    <script src="code.js" type="text/javascript"></script>
+</body>
+</html>
