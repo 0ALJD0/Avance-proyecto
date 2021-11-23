@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("degradado.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --padding-container: 100px 0;
+}
+.hero {
+  width: 100%;
+  height: 100px;
+
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%);
+  background-size: cover;
+  z-index: -1;
+}
+
+.nav {
+  --padding-container: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav__title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__link {
+  margin-left: auto;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 2em;
+  font-size: 20px;
+  list-style: none;
+}
+
+.nav__links {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__menu {
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+
+.nav__img {
+  display: block;
+  width: 30px;
+}
+
+.nav__close {
+  display: var(--show, none);
+}
+.hero__container {
+  max-width: 800px;
+  --padding-container: 0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 2em;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+.hero__paragraph {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+h1 {
+  padding-bottom: 0;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+.send-button {
+  padding: 15px 25px;
+  margin: 20px;
+  font-size: 16px;
+  border: 2px solid rgb(52, 89, 124);
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(to right, transparent 50%, rgb(52, 89, 124) 50%);
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 0.5s;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  font-family: "Poppins", sans-serif;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
+
+.send-button:hover {
+  background-position: right;
+  color: white;
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+}
+
+/* Tabla */
+
+table.cal {
+  display: inline-block;
+  min-height: 600px;
+  width: 97%;
+  color: #000000;
+  border-spacing: 0;
+  padding: 2%;
+  margin: 2%;
+  margin-top: 0px;
+}
+table > caption {
+  text-align: center;
+  color: #ffffff;
+}
+thead > tr > th {
+  background-color: #09486e;
+  color: white;
+  border: 1px outset white;
+  height: 50px;
+  text-align: center;
+  vertical-align: center;
+  font-size: 25px;
+  margin: 1%;
+  padding: 1%;
+}
+
+table.cal > tbody > th,
+td {
+  display: in-line;
+  width: 10%;
+  margin: 2%;
+  padding: 2%;
+  height: 60px;
+  border: 2px outset white;
+  vertical-align: top;
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+
+.horas {
+  margin: 0;
+  padding: 0;
+  background-color: #ffd180;
+}
+.Appweb {
+  padding: 0;
+  margin: 0;
+  background-color: #8fdf91;
+  color: blanco;
+}
+
+.Inter {
+  padding: 0;
+  margin: 0;
+  background-color: #f17d72;
+  color: blanco;
+}
+.Ing {
+  padding: 0;
+  margin: 0;
+  background-color: #b39ddb;
+  color: blanco;
+}
+.Redes {
+  padding: 0;
+  margin: 0;
+  background-color: #ffcdd2;
+  color: blanco;
+}
+.Lectura {
+  padding: 0;
+  margin: 0;
+  background-color: #008080;
+  color: blanco;
+}
+.GBD {
+  padding: 2px;
+  margin: 0;
+  background-color: #bcaaa4;
+  color: blanco;
+}
+
+.Blanco {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #1d293f;
+}
+
+.footer__copy {
+  --padding-container: 30px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__copyright {
+  font-weight: 300;
+}
+
+.footer__icons {
+  margin-bottom: 10px;
+}
+
+.footer__img {
+  width: 30px;
+}
+
+#btnSalir {
+  display: none;
+  font-size: 21px;
+  color: #fff;
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
