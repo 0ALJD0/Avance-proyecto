@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../Menu/menu.html" class="nav__title">HorariosFacci</a>
+        </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li>
+                    <a href="../Contactenos/Formulario 4.html" class="nav__links">Contáctenos</a>
+                </li>
+                <li>
+                    <a href="../Despues/despues.html" class="nav__links">Iniciar sesión</a>
+                </li>
+                <li>
+                    <a href="../Registrarse/Formulario 1.html" class="nav__links">Registrarse</a>
+                </li>
+
+                <img src="images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <form id="caja-login" method="get" name="form2">
+        <h4>Inicie sesión</h4>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="E-mail">
+        <span id="c-error" aria-live="assertive"></span>
+
+        <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+        <span id="p-error" aria-live="assertive"></span>
+
+        <label> <p> ¿Eres nuevo por aquí? <a href="../Registrarse/Formulario 1.html">Regístrate</a> </p></label>
+        <input type="button" class="send-button" id="sesionini" value="Iniciar sesión">
+        <span id="t-error" aria-live="assertive"></span>
+    </form>
+
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="images/youtube.svg" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; HorariosFacci</h3>
+        </section>
+    </footer>
+    <script src="code.js" type="text/javascript"></script>
+    <script src="credenciales.js" type="text/javascript"></script>
+    <script src="iniciar.js" type="text/javascript"></script>
+</body>
+</html>
